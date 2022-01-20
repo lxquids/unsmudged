@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Greyson Jenkins.</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220120132616">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap&_v=20220120132616" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220120132616" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner">
+				<a href="index.html" class="header__logo"><img src="img/logo.svg?_v=1642677976123" alt=""></a>
+				<nav class="header__links">
+					<a href="#about" class="header__link">about</a>
+					<a href="#" class="header__btn">contact</a>
+				</nav>
+			</div>
+		</header>
+		<div class="preloader">
+			<a href="" class="header__logo"><img src="img/logo.svg?_v=1642677976123" alt=""></a>
+		</div>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__info">
+						<h1 class="hero__title">
+							Greyson Jenkins
+						</h1>
+						<p class="hero__subtitle">A photographer works closely with clients to capture photos of people, places and things through the use of creativity and technical abilities in photographic equipment and photo manipulation software.</p>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<h2 class="gallery__title">projects - 2022</h2>
+				<div class="gallery__buttons">
+					<button type="button" class="gallery__button" data-filter="all">All</button>
+					<button type="button" class="gallery__button" data-filter=".landscape">Landscape</button>
+					<button type="button" class="gallery__button" data-filter=".portrait">Portrait</button>
+					<button type="button" class="gallery__button" data-filter=".architectural">Architectural</button>
+					<!-- <button type="button" class="gallery__button" data-filter=".architectural">Architectural</button> -->
+				</div>
+				<div class="gallery__items mixitup">
+					<img src="img/gallery/1.jpg?_v=1642677976123" class="gallery__item mix architectural" alt="landscape">
+					<img src="img/gallery/3.jpg?_v=1642677976123" class="gallery__item mix landscape" alt="landscape">
+					<img src="img/gallery/1.jpg?_v=1642677976123" class="gallery__item mix architectural" alt="landscape">
+					<img src="img/gallery/2.jpg?_v=1642677976123" class="gallery__item mix portrait" alt="landscape">
+					<img src="img/gallery/3.jpg?_v=1642677976123" class="gallery__item mix landscape" alt="landscape">
+					<img src="img/gallery/2.jpg?_v=1642677976123" class="gallery__item mix portrait" alt="landscape">
+					<img src="img/gallery/1.jpg?_v=1642677976123" class="gallery__item mix architectural" alt="landscape">
+					<img src="img/gallery/3.jpg?_v=1642677976123" class="gallery__item mix landscape" alt="landscape">
+				</div>
+			</section>
+			<section class="info__container">
+				<div class="info__about" id="about">
+					<h2 class="info__title">about me.</h2>
+					<div class="info__second">
+						<p class="info__subtitle">Photographer/ Videographer/ Director New York/ California</p>
+						<hr size="3" width="100%" color="#F7F7F7">
+						<div class="social">
+							<h2 class="social__title">Social media</h2>
+							<div class="social__links">
+								<a href="#" class="social__link social__link--active">Instagram</a>
+								<a href="#" class="social__link">Twitter</a>
+								<a href="#" class="social__link">Email</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="info__contact">
+					<h2 class="info__title">contact.</h2>
+					<div class="info__second">
+						<form class="form" action="telegram.php" method="POST">
+
+							<div class="form-group">
+								<input type="text" class="form-control" id="" name="name" placeholder="Full name">
+							</div>
+
+							<div class="form-group">
+								<input type="text" class="form-control" id="" name="email" placeholder="Email">
+							</div>
+
+							<div class="form-group">
+								<textarea name="msg" placeholder="Commentary"></textarea>
+							</div>
+
+							<button type="submit" class="btn" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Send</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__inner">
+				<h2 class="footer__left">#footer</h2>
+				<div class="footer__right">
+					<p>developed by</p>
+					<a href="https://instagram.com/ftvnty"><img src="img/ftvnty.svg?_v=1642677976123" alt="ftvnty logo"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div class="hystmodal" id="myPopup" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+		</div>
+	</div>
+</div>
+<div class="hystmodal" id="massageName" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+			Сообщение
+		</div>
+	</div>
+</div>
+ -->
+	<script>
+		var preloader = document.querySelector(".preloader")
+
+		window.addEventListener("load", vanish);
+
+		function vanish() {
+			preloader.classList.add("disppear");
+		}
+	</script>
+	<script src="js/app.min.js?_v=20220120132616"></script>
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+
+	<script>
+		ScrollReveal().reveal('.gallery__item', {
+			interval: 250
+		});
+	</script>
+
+	<script>
+		var containerEl = document.querySelector('.mixitup');
+
+		var mixer = mixitup(containerEl, {
+			selectors: {
+				target: '.gallery__item'
+			},
+			animation: {
+				duration: 250,
+				effects: "fade stagger(30ms)",
+				nudge: false
+			}
+		});
+	</script>
+	<script>
+		new ClipboardJS('.buttons');
+	</script>
+</body>
+
+</html>
